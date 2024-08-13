@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/assets/imgs/Logo.svg" alt="Imagem do logo alura">
+    </header>
+    <main>
+        <section class="container">
+            <section class="insert_text">
+                <textarea class="insert_text_area" cols="41" rows="4" placeholder="Digite o seu texto"></textarea>
+                <div class="warning">
+                    <img class="warning_logo" src="assets/imgs/aviso_logo.svg" alt="Logo de aviso de texto">
+                    <p class="warning_text">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="button_group">
+                    <button class="button_encrypt" onclick="encrypt_button()">Criptografar</button>
+                    <button class="button_decrypt" onclick="decrypt_button()">Descriptografar</button>
+                </div>
+            </section>
+            <section class="decoded_text">
+                <textarea id="output_textarea" class="output_text_area" cols="20" rows="8" hidden></textarea>
+                <img class="icon" id="icon" src="/assets/imgs/icon.svg" alt="Icone de caixa de mensagem vazia">
+                <h1 id="decoded_text_h1" class="decoded_text_h1">Nenhuma mensagem encontrada</h1>
+                <p id="decoded_text_p" class="decoded_text_p">Digite um texto que você deseja criptografar ou descriptografar</p>
+                <button id="copy" class="button_copy" onclick="copy()" hidden>Copiar</button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h4 class="footer_text">Feito com ❤️ por 
+            <a href="https://www.linkedin.com/in/rafaelkbaptista/" target="_blank">Rafael Baptista</a>
+        </h4>
+    </footer>
+    <script src="/assets/script.js"></script>
+</body>
+</html>
